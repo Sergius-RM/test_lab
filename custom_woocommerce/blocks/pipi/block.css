@@ -1,0 +1,50 @@
+.block-person {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+  }
+  .block-person > .image {
+    margin: 0 45px;
+  }
+  .block-person > .image > img {
+    max-width: 175px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .block-person > .info {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .block-person > .info > .name {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .block-person > .info > .data {
+    max-width: 250px;
+    line-height: 29px;
+  }
+  .block-person > .info > .position {
+    margin-top: -7px;
+  }
+  .block-person > .info > .phone > a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .block-person > .info > .phone > a:hover {
+    color: #0018e3;
+  }
+  .block-person > .info > .email {
+    margin-top: 2px;
+  }
+  .block-person > .info > .email > a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .block-person > .info > .email > a:hover {
+    color: #0018e3;
+  }

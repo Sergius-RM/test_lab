@@ -1,0 +1,25 @@
+.post_tag {
+	font-size: 0px !important;
+}
+.post_tag  ul {
+    padding: 0;
+}
+.post_tag li {
+	list-style: none;
+    display: inline-block;
+}
+.post_tag li {
+    display: inline-block;
+    min-width: 32%;
+    padding: 10px 20px;
+	text-align: right;
+}
+.post_tag li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px !important;
+}
+.post_tag li:nth-child(2n) {
+	text-align: left;
+}

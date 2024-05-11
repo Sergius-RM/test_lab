@@ -1,0 +1,74 @@
+
+.block-person {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px 0px;
+  }
+@media (max-width: 1660px) {
+	.block-person {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+
+  .block-person > .image {
+    margin: 0;
+    margin-right: 45px;
+    padding: 0 0px;
+  }
+  .block-person > .image > img {
+    width: 175px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .block-person > .info {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: left;
+/*     min-height: 175px; */
+    /* width: 175px; */
+  }
+  .block-person > .info > * {
+    max-width: unset;
+  }
+  .block-person > .info * {
+/*     word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+  }
+  .block-person > .info > .name {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .block-person > .info > .data {
+    max-width: 250px;
+    line-height: 29px;
+  }
+  .block-person > .info > .position {
+    margin-top: 0px;
+  }
+  .block-person > .info > .phone > a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .block-person > .info > .phone > a:hover {
+    color: #0018e3;
+  }
+  .block-person > .info > .email {
+    margin-top: 2px;
+  }
+  .block-person > .info > .email > a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .block-person > .info > .email > a:hover {
+    color: #0018e3;
+  }

@@ -1,0 +1,117 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+  }
+  .form > div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form > div > label {
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #191919;
+  }
+  .form > div > input, .form > div > select {
+    width: 100%;
+    height: 30px;
+    border: unset;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  .form > div > textarea {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+  }
+  .form > div > button {
+    align-self: center;
+    margin: 0 auto;
+    width: 85px;
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+    border: 1 px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .form > div:last-child {
+    margin-top: 20px;
+  }
+
+  .form-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 35px 20px;
+  }
+  .form-container > .form {
+    position: relative;
+  }
+  @media (min-width: 550px) {
+    .form-container > .form {
+      padding: 35px 70px;
+    }
+  }
+  @media (min-width: 950px) {
+    .form-container > .form > div {
+      width: 50%;
+    }
+  }
+  .form-container > .form > div > span {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  @media (min-width: 550px) {
+    .form-container > .form > div > span {
+      font-size: 36px;
+    }
+  }
+  .form-container > .form > div > label {
+    padding: 20px 5px 0;
+  }
+  @media (min-width: 550px) {
+    .form-container > .form > div > label {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  @media (min-width: 550px) {
+    .form-container > .form > div > input, .form-container > .form > div > select {
+      height: 55px;
+    }
+  }
+  .form-container > .form > div > button {
+    width: 170px;
+    height: 55px;
+    font-size: 24px;
+  }
+  .form-container > .form > div:last-child {
+    margin-top: 60px;
+  }
+  .form-container > .form > img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto 30px;
+  }
+  @media (min-width: 550px) {
+    .form-container > .form > img {
+      width: 400px;
+      height: 430px;
+    }
+  }
+  @media (min-width: 950px) {
+    .form-container > .form > img {
+      position: absolute;
+      top: -35px;
+      right: 0;
+    }
+  }

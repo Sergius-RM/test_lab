@@ -1,0 +1,154 @@
+{
+    "key": "group_5f70c21f94ca0",
+    "title": "Post\/Page Settings",
+    "fields": [
+        {
+            "key": "field_60af8bc3a118e",
+            "label": "Page Width",
+            "name": "featured_page_width",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_inbox": "In Box",
+                "page_fullwidth": "Full Width"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5f70c69b822ef",
+            "label": "Featured Image - Scheme",
+            "name": "featured_image_scheme",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "main-img-dark": "Dark",
+                "main-img-light": "Light"
+            },
+            "allow_null": 0,
+            "default_value": "main-img-dark",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5f70c8f73a4db",
+            "label": "Featured Image - Heading",
+            "name": "featured_image_heading",
+            "type": "text",
+            "instructions": "Add heading if different than post title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f70c6d2822f0",
+            "label": "Featured Image - Text",
+            "name": "featured_image_text",
+            "type": "textarea",
+            "instructions": "Otsikon lisäksi näkyvä pidempi teksti.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f70c7dd25a30",
+            "label": "Featured Image - Link",
+            "name": "featured_image_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_60b0e81e1041f",
+            "label": "Sidebars",
+            "name": "post_sidebars_area",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no_sidebar": "No Sidebars",
+                "l_sidebar": "Left Sidebar",
+                "r_sidebar": "Right Sidebar",
+                "two_sidebar": "Left & Right Sidebars"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1622206858
+}

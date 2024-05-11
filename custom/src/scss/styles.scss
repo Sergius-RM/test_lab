@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// sanitize.css | https://csstools.github.io/sanitize.css/
+@import
+	'~sanitize.css/sanitize.css',
+	'~sanitize.css/forms.css',
+	'~sanitize.css/typography.css';
+
+// wordpress theme info
+@import './wp-theme-info.scss';
+
+// Bootstrap
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Fonts
+// ...
+
+// General scss-styles
+// ...

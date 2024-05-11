@@ -1,0 +1,133 @@
+/* < 1150 */
+.dashed {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashed:before {
+  content: "";
+  display: block;
+  border-left: 4px dashed blue;
+  position: absolute;
+  left: 45px;
+  height: calc(100% - 20px);
+  width: 10px;
+  top: 10px;
+  z-index: 99;
+}
+@media (min-width: 1150px) {
+  .dashed:before {
+    display: none;
+  }
+}
+.dashed img {
+  display: none;
+}
+@media (min-width: 1150px) {
+  .dashed img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.dashed .point {
+  font-size: 18px;
+  line-height: 200%;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 30px 15px 90px;
+  position: relative;
+}
+.dashed .point:nth-child(2n) {
+  background: white;
+}
+@media (min-width: 1150px) {
+  .dashed .point:nth-child(2n) {
+    background: unset;
+  }
+}
+.dashed .point span {
+  font-size: 32px;
+  font-weight: 700;
+  display: block;
+}
+@media (min-width: 1150px) {
+  .dashed .point span {
+    font-size: 23px;
+    font-weight: 700;
+    display: block;
+  }
+}
+@media (min-width: 1150px) {
+	.hero h2 {
+		font-size: 50px;
+	}
+  .dashed .point {
+    position: absolute;
+    font-size: 15px;
+    line-height: 200%;
+    display: inline-block;
+    max-width: 220px !important;
+    padding: unset;
+	  word-break: break-word;
+  }
+  .dashed .point > i {
+    display: none !important;
+  }
+}
+@media (min-width: 1300px) {
+  .dashed .point {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1150px) {
+  .dashed .point.p1 {
+/*     top: 39%; */
+	  top: 29%;
+    left: 3%;
+  }
+  .dashed .point.p2 {
+/*     top: 7%; */
+	  top: 1%;
+    left: 27%;
+    text-align: left;
+  }
+  .dashed .point.p3 {
+    top: 78%;
+    left: 46%;
+    text-align: left;
+	  max-width: 320px !important;
+  }
+  .dashed .point.p4 {
+    top: 60%;
+	right: 2%;
+	text-align: right;
+  }
+}
+.dashed.small .point {
+  font-size: 13px;
+  max-width: 25%;
+}
+.dashed.small .point span {
+  font-size: 20px;
+}
+
+.dashed.small .point.p1 {
+  top: 28%;
+  left: 3%;
+}
+.dashed.small .point.p2 {
+  top: 4%;
+  left: 29%;
+  text-align: center;
+}
+.dashed.small .point.p3 {
+  top: 77%;
+  left: 45%;
+  text-align: center;
+}
+.dashed.small .point.p4 {
+  top: 59%;
+  left: 72%;
+  text-align: right;
+}

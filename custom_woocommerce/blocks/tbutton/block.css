@@ -1,0 +1,42 @@
+.block-button {
+  background-color: #ffffff;
+}
+
+.block-button>div {
+  display: flex;
+  align-items: center;
+  padding: 30px 15px;
+  max-width: unset;
+  margin: 0 auto;
+}
+
+.block-button>div>a {
+  background-color: #f1f1f1;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px 45px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.block-button>div>a:hover {
+  opacity: 0.6;
+}
+
+.block-button.color {
+  background-color: #f1f1f1;
+}
+
+.block-button.color a {
+  background-color: #4a5dff;
+  color: #ffffff;
+}
+
+.block-button.color a:hover {
+  background-color: #0018e3;
+}

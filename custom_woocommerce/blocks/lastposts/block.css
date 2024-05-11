@@ -1,0 +1,99 @@
+.articles {
+    display: grid;
+    padding: 40px 10px;
+    column-gap: 70px;
+    row-gap: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 465px));
+  }
+  @media (min-width: 400px) {
+    .articles {
+      padding: 40px;
+    }
+  }
+  .articles .article {
+    max-width: 465px;
+    width: 100%;
+    min-height: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .articles .article > div img,
+  .articles .article > div a img {
+    max-width: 420px;
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: 10%;
+    margin-bottom: 50px;
+	  display: block;
+  }
+  .articles .article > div img ~ .message {
+    margin-bottom: 50px;
+  }
+  .articles .article > div > .title {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: bold;
+  }
+  .articles .article > div > .message {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 170%;
+  }
+  .articles .article > a {
+    display: block;
+    text-decoration: none;
+    width: 135px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    transition: 0.3s;
+    color: #000;
+  }
+  .articles .article > a:hover {
+    color: #666666;
+  }
+  .articles.bordered > .article {
+    border: 2px solid #e6e6e8;
+    padding: 25px 40px;
+  }
+  .articles.bordered > .article > div > .title {
+    line-height: 150%;
+    padding-left: 10px;
+    font-size: 42px;
+    border-bottom: 5px solid #4de200;
+  }
+  .articles.bordered > .article > div > .message {
+    padding: 15px 0 40px;
+  }
+  @media (min-width: 500px) {
+    .articles.bordered > .article > div > .message {
+      padding: 15px 10px 40px;
+    }
+  }
+  .articles.bordered > .article > a {
+    background-color: #4a5dff;
+    color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: 0.3s;
+  }
+  .articles.bordered > .article > a:hover {
+    background-color: #0018e3;
+  }
+  @media (min-width: 500px) {
+    .articles.bordered > .article > a {
+      margin-bottom: 60px;
+    }
+  }
+
+  .articles.bordered .article > div > img {
+    display: none;
+  }

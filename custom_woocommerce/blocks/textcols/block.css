@@ -1,0 +1,161 @@
+.text-cols {
+    padding: 50px 20px;
+  }
+  @media (min-width: 950px) {
+    .text-cols {
+      padding: 100px 50px;
+    }
+  }
+  .text-cols > .title {
+    margin-bottom: 50px;
+  }
+  .text-cols .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  @media (min-width: 950px) {
+    .text-cols .title {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .text-cols .title {
+      font-size: 46px;
+    }
+  }
+  .text-cols > .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .text-cols > .container + .container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #aeaeae;
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container + .container {
+      margin-top: unset;
+      border-top: unset;
+    }
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container {
+      grid-template-columns: 60% 40%;
+    }
+  }
+  .text-cols > .container > .text-col + .text-col > .title:first-child {
+    margin-top: 30px;
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col + .text-col > .title:first-child {
+      margin-top: unset;
+    }
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col {
+      padding: 0 30px;
+    }
+  }
+  .text-cols > .container > .text-col > .title {
+    margin-bottom: 15px;
+  }
+  .text-cols > .container > .text-col > .text {
+    margin-bottom: 20px;
+    line-height: 200%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .text-cols > .container > .text-col > .text > .title {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col > .text > .title {
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .text-cols > .container > .text-col > .text > .title {
+      font-size: 34px;
+    }
+  }
+  .text-cols > .container > .text-col > .text > div {
+    display: block;
+  }
+  .text-cols > .container > .text-col > .text > div > span {
+    display: block;
+    font-size: 18px;
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col > .text > div > span {
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col > .text > div > span {
+      font-size: 24px;
+    }
+  }
+  .text-cols > .container > .text-col > .text > div + div {
+    padding-top: 10px;
+  }
+  .text-cols > .container > .text-col > .more > label {
+    position: relative;
+  }
+  .text-cols > .container > .text-col > .more > label > select {
+    border: unset;
+    font-weight: bold;
+    font-size: 22px;
+    outline: none;
+    appearance: none;
+  }
+  .text-cols > .container > .text-col > .more > label > .icon {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: #ffffff;
+    color: #4a5dff;
+    width: 20px;
+    height: 20px;
+  }
+  .text-cols > .container > .text-col > .price {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  @media (min-width: 950px) {
+    .text-cols > .container > .text-col > .price {
+      font-size: 26px;
+    }
+  }
+  .text-cols.half > .container {
+    grid-template-columns: 100%;
+    text-align: center;
+    border-top: unset;
+    margin-top: unset;
+    padding-top: unset;
+  }
+  @media (min-width: 950px) {
+    .text-cols.half > .container {
+      grid-template-columns: 50% 50%;
+      margin-bottom: 150px;
+    }
+  }
+  .text-cols.half > .container > .text-col {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 950px) {
+    .text-cols.half > .container > .text-col {
+      padding-bottom: unset;
+    }
+  }
+  .text-cols.half > .container > .text-col > .title {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  @media (min-width: 1300px) {
+    .text-cols.half > .container > .text-col > .title {
+      font-size: 30px;
+    }
+  }

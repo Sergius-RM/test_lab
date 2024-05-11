@@ -1,0 +1,34 @@
+.key-words {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 200%;
+  }
+  @media (min-width: 800px) {
+    .key-words {
+      font-size: 20px;
+    }
+  }
+
+  .key-words > a {
+    display: block;
+    min-width: 33%;
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .key-words > a:hover {
+    opacity: 0.6;
+  }
+
+  .key-words > a:nth-child(4),
+  .key-words > a:nth-child(5),
+  .key-words > a:nth-child(6),
+  .key-words > a:nth-child(10),
+  .key-words > a:nth-child(11),
+  .key-words > a:nth-child(12) {
+    text-align: right;
+  }

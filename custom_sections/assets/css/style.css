@@ -1,0 +1,31 @@
+@import "/wp-content/themes/easye/assets/css/bootstrap.min.css";
+body {
+  background: #fff;
+}
+
+.is_onmobile {
+  display: none;
+}
+
+.no_mobile {
+  display: contents;
+}
+
+header {
+  background: #333;
+  padding: 20px 25px;
+}
+
+.site-footer {
+  background: #637722;
+  padding: 54px 103px;
+}
+
+@media screen and (max-width: 768px) {
+  .is_onmobile {
+    display: contents;
+  }
+  .no_mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
